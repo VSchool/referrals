@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 const PORT = process.env.PORT || 8000
 
-const referralCodes = ["RHRFEVD"]
+const referralCodes = ["RHRFEVD", "R6ULI52", "R626LIU", "RHHKHVN"]
 
 app.get("/lime", (req, res) => {
     const randCode = referralCodes[Math.floor(Math.random() * referralCodes.length)]
