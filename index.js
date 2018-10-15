@@ -6,7 +6,7 @@ const referralCodes = ["RHRFEVD", "R6ULI52", "R626LIU", "RHHKHVN"]
 
 app.get("/lime", (req, res) => {
     const randCode = referralCodes[Math.floor(Math.random() * referralCodes.length)]
-    const url = `https://limebike.app.link/referralcodes?promo_code=${randCode}`
+    const url = `https://lime.bike/referral/${randCode}`
     res.redirect(url)
 })
 
