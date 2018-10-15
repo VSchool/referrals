@@ -15,7 +15,11 @@ app.get("/lime", (req, res) => {
 })
 
 app.get("/bird", (req, res) => {
-    const referralUrls = ["https://gift.bird.co/OhyJTb3J2Q", "https://gift.bird.co/hSYNk23I2Q"]
+    const referralUrls = [
+        "https://gift.bird.co/OhyJTb3J2Q",
+        "https://gift.bird.co/hSYNk23I2Q",
+        "https://gift.bird.co/wI2QrsWI2Q"
+    ]
     const randUrl = referralUrls[Math.floor(Math.random() * referralUrls.length)]
     return res.redirect(randUrl)
 })
