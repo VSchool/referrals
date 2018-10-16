@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/lime", (req, res) => {
-    const referralCodes = ["RHRFEVD", "R6ULI52", "R626LIU", "RHHKHVN"]
+    const referralCodes = ["RHRFEVD", "R6ULI52", "R626LIU", "RHHKHVN", "RTUVYP"]
     const randCode = referralCodes[Math.floor(Math.random() * referralCodes.length)]
     const url = `https://lime.bike/referral/${randCode}`
     return res.redirect(url)
@@ -18,7 +18,8 @@ app.get("/bird", (req, res) => {
     const referralUrls = [
         "https://gift.bird.co/OhyJTb3J2Q",
         "https://gift.bird.co/hSYNk23I2Q",
-        "https://gift.bird.co/wI2QrsWI2Q"
+        "https://gift.bird.co/wI2QrsWI2Q",
+        "https://gift.bird.co/4xmRiTJz4Q"
     ]
     const randUrl = referralUrls[Math.floor(Math.random() * referralUrls.length)]
     return res.redirect(randUrl)
